@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Env / secrets
+.env
+!.env.example
+keys/
+*.pem
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node / frontend build
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+npm-debug.log*
+
+# Docker volumes / local data
+pg_data/
+redis_data/
+temporal_data/
+
+# Large spec binaries (kept out of PRs)
+*.pdf
+*.docx
+
+# Scratch extracted docs
+io_spec_extracted.txt
+project_doc_extracted.txt
