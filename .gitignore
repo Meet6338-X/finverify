@@ -8,6 +8,9 @@ venv/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
 
 # Env / secrets
 .env
@@ -39,3 +42,7 @@ temporal_data/
 # Scratch extracted docs
 io_spec_extracted.txt
 project_doc_extracted.txt
+
+# Local archives / scratch
+validator.zip
+*.zip

@@ -1,0 +1,7 @@
+# FinVerify validator — standalone proof pack.
+# Installs ONLY what the proof needs. Does NOT touch ../src or ../tests.
+pynacl>=1.5.0
+sympy>=1.13.0
+numpy>=1.26.0
+qrcode[pil]>=7.4.0
+reportlab>=4.2.0

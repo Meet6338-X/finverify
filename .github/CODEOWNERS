@@ -1,0 +1,35 @@
+# Code owners for FinVerify.
+#
+# These owners are automatically requested for review on every pull request
+# that touches the matching paths. See:
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owner for everything in the repository.
+*                               @Meet6338-X
+
+# Core verification engine — highest scrutiny.
+# Changes here can alter verification outcomes, so they need an explicit review.
+/src/reexecutor/               @Meet6338-X
+
+# Cryptography and certificate generation.
+/src/crypto/                   @Meet6338-X
+/src/reports/                  @Meet6338-X
+
+# Ledger and schema — append-only guarantees live here.
+/src/db/                       @Meet6338-X
+
+# Independent proof pack.
+/validator/                    @Meet6338-X
+
+# Deployment and CI.
+/.github/                      @Meet6338-X
+/docker-compose.yml            @Meet6338-X
+/docker-compose.dev.yml        @Meet6338-X
+/Dockerfile.api                @Meet6338-X
+/Dockerfile.worker             @Meet6338-X
+
+# Governance and licensing — changes here need the maintainer's explicit sign-off.
+LICENSE                        @Meet6338-X
+/CONTRIBUTING.md               @Meet6338-X
+/CODE_OF_CONDUCT.md            @Meet6338-X
+/SECURITY.md                   @Meet6338-X
