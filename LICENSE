@@ -1,21 +1,298 @@
-MIT License
+# FinVerify Proprietary License Agreement
 
-Copyright (c) 2026 Meet shah
+**Version 1.0 — Effective 2026-09-23**
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+**Copyright © 2026 Meet Shah and the FinVerify Project. All Rights Reserved.**
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+---
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+## 0. Notice
+
+FinVerify is **not** an open-source project. It is proprietary software that is
+published for *reading, evaluation, and contribution*. The public repository
+exists to solicit transparent, reviewable improvements — **not** to grant
+redistribution rights.
+
+This License Agreement ("License") governs all files, directories, and
+materials in the `finverify` repository (the "Software"), including source
+code, documentation, configurations, schemas, test suites, cryptographic
+material, designs, and generated artifacts, in every medium (the "Materials").
+
+> **Not legal advice.** This document was drafted by the project maintainers for
+> practical clarity. It is not a substitute for review by a qualified attorney
+> in your jurisdiction. Consult counsel before relying on it for a commercial
+> transaction.
+
+---
+
+## 1. Definitions
+
+| Term | Meaning |
+|---|---|
+| **Licensor** | The copyright holder and maintainers of the Software: Meet Shah and the FinVerify Project. |
+| **Licensee** | You — the individual or legal entity exercising rights under this License. |
+| **Contribution** | Any original work of authorship submitted by You to the Licensor for inclusion in the Software (source code, tests, documentation, designs, configuration, or otherwise). |
+| **Contribution License** | The copyright and patent license granted by You to the Licensor for Contributions, as set out in §6. |
+| **Third-Party Components** | Third-party source code, libraries, models, fonts, icons, and data that are separately licensed and identified in `requirements.txt`, `frontend/package.json`, or other dependency manifests. |
+| **Trademark Materials** | The names "FinVerify" and "FinVerify Validator", the FinVerify word mark, logo, and related branding. |
+
+---
+
+## 2. Grant of Limited Access License
+
+Subject to your continued compliance with this License, the Licensor grants
+you a **limited, revocable, non-exclusive, non-transferable, royalty-free**
+license to:
+
+1. **Access and View** the Materials within the public repository, and
+2. **Execute** the Materials unmodified on hardware controlled by you, solely
+   for evaluation, research, testing, security review, and preparation of a
+   Contribution.
+
+This license is **not** a license to copy, and it is **not** an ownership
+transfer. Ownership of the Software and every Contribution merged into it
+remains with the respective copyright holder.
+
+---
+
+## 3. Restrictions — What You May Not Do
+
+Unless you have the Licensor's **prior written permission**, you **must not**:
+
+1. **Copy, reproduce, republish, repost, mirror, or otherwise reproduce** the
+   Materials, in whole or in part, in any medium, whether modified or not.
+2. **Distribute, sublicense, lease, rent, sell, resell, license, or otherwise
+   transfer** the Materials, including via forks, mirrors, package registries,
+   container registries, Docker Hub, PyPI, npm, Hugging Face, Model Hub, or any
+   similar service.
+3. **Host or operate** the Software, or any derivative of it, as a public or
+   commercial service — including as a SaaS product, hosted demo, API
+   endpoint, hosted notebook, or competitive product.
+4. **Use the Software, in any form, in a commercial product or service**, or
+   in any revenue-generating activity.
+5. **Create, publish, or distribute a derivative work or fork** of the
+   Software.
+6. **Remove, alter, obscure, or circumvent** any copyright, trademark,
+   attribution, license, or proprietary notice in the Materials.
+7. **Use the Trademark Materials** — other than to accurately describe the
+   Software, to link to the official repository, or to state factually that
+   your Contribution was merged — including in your project name, domain
+   name, logo, or product branding.
+8. **Represent yourself** as the Licensor, an official maintainer, an
+   authorized partner, or an official FinVerify distribution channel.
+9. **Use the Software to build a competing product**, or to benchmark,
+   train, fine-tune, evaluate, or otherwise derive models, datasets, weights,
+   or artifacts from the Software for commercial purposes.
+10. **Remove or disable** the cryptographic signing, canonicalization, or
+    append-only ledger guarantees in order to disguise the provenance of
+    output produced by the Software.
+
+Any of the above requires a separate written agreement with the Licensor
+(available on request). A public fork, a public mirror, or an unauthorized
+copy constitutes a breach of this License.
+
+---
+
+## 4. Contributions — Pull Requests
+
+Pull Requests are **welcome and encouraged**. By opening a Pull Request, you
+agree to the following:
+
+1. You have read and understood this License and the
+   [`CONTRIBUTING.md`](CONTRIBUTING.md).
+2. Your Contribution is licensed to the Licensor under the
+   **Contribution License** in §6.
+3. You represent that the Contribution is your original work, that you hold
+   all rights necessary to submit it, and that it does not knowingly
+   incorporate third-party material without appropriate attribution and
+   license.
+4. You grant the Licensor a **perpetual, irrevocable, worldwide,
+   royalty-free, sublicensable, transferable** license to use, reproduce,
+   modify, create derivative works of, distribute, and otherwise exploit your
+   Contribution as part of the Software, including the right to relicense the
+   entire Software at the Licensor's discretion.
+5. You understand that **no obligation to merge** your Pull Request exists.
+   The Licensor may close, reject, or re-scope any Pull Request without
+   liability.
+6. You understand that your Contribution will be merged and distributed
+   **without warranty** and under the terms of this License.
+7. You retain all copyright in your Contribution. The Licensor does not
+   acquire ownership of your Contribution — only the rights in §4.4 needed
+   to distribute and maintain it.
+
+Merging a Pull Request constitutes the Licensor's written acceptance of your
+Contribution under these terms.
+
+---
+
+## 5. Ownership of the Software
+
+The Software is and remains the property of the Licensor. This License grants
+**no** title, ownership, or intellectual-property rights in the Software, and
+no implied license by estoppel, exhaustion, or otherwise.
+
+Feedback, issue reports, feature requests, and bug reports you submit outside
+a Pull Request are **not** Contributions and grant no license; the Licensor
+may use them freely without attribution.
+
+---
+
+## 6. Contribution License (CLA)
+
+For each Contribution, You grant the Licensor and its successors, assignees,
+sublicensees, and recipients a perpetual, irrevocable, worldwide,
+non-exclusive, royalty-free, fully paid-up, sublicensable, transferable
+license to reproduce, prepare derivative works of, publicly display,
+publicly perform, sublicense, and distribute your Contribution and such
+derivative works, under the terms of this License or any successor license the
+Licensor chooses.
+
+You retain all right, title, and interest in your Contribution and represent
+that You are the sole author and owner of it.
+
+---
+
+## 7. Third-Party Components and Data
+
+Third-Party Components are **not** governed by this License. Each remains
+subject to its own license, as identified in the applicable dependency
+manifest. You must comply with those licenses; nothing here grants you any
+right in third-party material beyond what those licenses provide.
+
+Filings, company-facts data, and XBRL facts retrieved at runtime from the
+U.S. Securities and Exchange Commission's EDGAR API are subject to the SEC's
+terms of use and are **not** part of the Software. You are responsible for
+complying with SEC fair-access policies, including the requirement to send an
+identifiable `User-Agent` and to respect SEC rate limits.
+
+---
+
+## 8. Trademarks
+
+"FinVerify" and the FinVerify logo are trademarks of the Licensor. This
+License grants no trademark rights. Descriptive use — for example, stating
+"this project is a contribution to FinVerify" or linking to the official
+repository — is permitted. Use as a name for your own product, service, fork,
+or company is not.
+
+---
+
+## 9. Acceptance, Termination, and Remedies
+
+By using, cloning, downloading, or executing the Software, you accept this
+License. If you do not accept it, do not use the Software and delete any copy
+you obtained.
+
+Any breach — including unauthorized copying, redistribution, or commercial use
+— terminates your license **automatically**, without notice, and requires you
+to cease all use and destroy all copies. The Licensor reserves the right to
+seek injunctive relief, damages, and, where applicable, statutory or equitable
+remedies for unauthorized use of the Software or the Trademark Materials.
+
+Upon termination, all Contribution Licenses already granted survive, and
+Contributions already merged into the Software remain distributed under this
+License.
+
+---
+
+## 10. Disclaimer of Warranty
+
+**THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.** The Licensor
+does not warrant that the Software will be error-free, uninterrupted,
+available, or fit for a particular purpose, and does not warrant that
+verification results — including certificate statuses, tolerance decisions, or
+discrepancy traces — constitute accounting, legal, investment, or regulatory
+advice.
+
+The Software verifies numerical claims against source data; it does not
+evaluate the truth of narrative, qualitative, forward-looking, or
+non-computable claims. **Always route `unverifiable` claims to a qualified
+human reviewer.**
+
+---
+
+## 11. Limitation of Liability
+
+**TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE
+LICENSOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
+PUNITIVE, OR CONSEQUENTIAL DAMAGES, OR FOR ANY LOSS OF PROFITS, REVENUE,
+DATA, GOODWILL, OR BUSINESS INTERRUPTION, ARISING OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR ITS USE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGES.** The Licensor's total aggregate liability shall not exceed the
+greater of (a) the amount you paid for the Software (which is zero) or
+(b) USD 100.
+
+Some jurisdictions do not allow the exclusion of certain warranties or
+limitations of liability, so parts of this section may not apply to you.
+
+---
+
+## 12. Indemnification
+
+You agree to indemnify, defend, and hold harmless the Licensor and its
+contributors from and against any third-party claim, demand, loss, or expense
+(including reasonable legal fees) arising out of your breach of this License,
+your unauthorized use or distribution of the Software, or your violation of
+applicable law or third-party rights.
+
+---
+
+## 13. Notices
+
+Notices under this License must be sent to the Licensor at the address listed
+in the repository's `SECURITY.md` or the maintainer's public contact address
+in the official repository. Notices are deemed received upon delivery.
+
+---
+
+## 14. Governing Law
+
+This License is governed by the laws of the jurisdiction in which the
+Licensor maintains its principal place of business, excluding its conflict-of-
+law rules and excluding the UN Convention on Contracts for the International
+Sale of Goods. Any dispute not resolved amicably within 30 days of written
+notice shall be brought in the exclusive jurisdiction of the courts of that
+jurisdiction.
+
+---
+
+## 15. Miscellaneous
+
+- **Entire agreement.** This License is the entire agreement between You and
+  the Licensor regarding the Software and supersedes all prior
+  understandings.
+- **Modifications.** The Licensor may modify this License prospectively;
+  continued use after modification constitutes acceptance of the modified
+  terms for the version then in effect. The version in effect when you
+  submitted a Contribution governs that Contribution.
+- **Severability.** If any provision is held unenforceable, the remainder
+  remains in effect.
+- **Assignment.** You may not assign this License. The Licensor may assign it
+  in connection with a merger, reorganization, or sale of the Software.
+- **No waiver.** Failure to enforce a provision is not a waiver of it.
+- **Third-party beneficiaries.** §8 and §12 benefit third parties.
+- **Survival.** §§3, 5, 6, 7, 9, 10, 11, 12, 14, and 15 survive termination.
+
+---
+
+## 16. Open Questions
+
+If you want to use the Software in a way this License does not allow — for
+example, self-hosting internally, running a private deployment, or licensing
+it inside a commercial product — **ask first**. Write to the maintainer with a
+one-paragraph description of your use case. A separate written agreement is
+usually straightforward to put in place, and it protects you.
+
+**Contributor-friendly by design. Proprietary by intent.**
+
+---
+
+<div align="center">
+
+**FinVerify** — *Don't trust the math. Check the math.*
+
+Copyright © 2026 Meet Shah and the FinVerify Project. All Rights Reserved.
+
+</div>
